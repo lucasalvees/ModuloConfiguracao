@@ -17,15 +17,6 @@ namespace WindowsFormsAppPrincipal
         public FormPrincipal()
         {
             InitializeComponent();
-            Usuario usuario = new Usuario();
-            usuario.Nome = "Lucas Silva";
-            usuario.NomeUsuario = "lucassilva";
-            usuario.Ativo = false;
-            usuario.CPF = "123.456.789-34";
-            usuario.Senha = "lucas12";
-            usuario.Email = "lucassilva@gmail.com";
-
-            new UsuarioBLL().Inserir(usuario);
         }
 
         private void usuáriosToolStripMenuItem_Click(object sender, EventArgs e)
@@ -34,6 +25,19 @@ namespace WindowsFormsAppPrincipal
             {
                 frm.ShowDialog();
             }
+        }
+
+        private void gruposDeUsuáriosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            using (FormBuscarGrupoUsuario frm = new FormBuscarGrupoUsuario())
+            {
+                frm.ShowDialog();
+            }
+        }
+
+        private void FormPrincipal_Load(object sender, EventArgs e)
+        {
+            Constantes.IdUsuarioLogado = 9;
         }
     }
 }
