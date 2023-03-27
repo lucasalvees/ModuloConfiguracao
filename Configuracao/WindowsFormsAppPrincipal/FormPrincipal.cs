@@ -1,13 +1,4 @@
-﻿using BLL;
-using Models;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System;
 using System.Windows.Forms;
 
 namespace WindowsFormsAppPrincipal
@@ -37,7 +28,19 @@ namespace WindowsFormsAppPrincipal
 
         private void FormPrincipal_Load(object sender, EventArgs e)
         {
-            Constantes.IdUsuarioLogado = 9;
+            try
+            {
+                using (FormLogin frm = new FormLogin())
+                {
+                    frm.ShowDialog();
+                    if (!frm.Logou)
+                        Application.Exit();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
