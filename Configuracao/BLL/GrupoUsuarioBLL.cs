@@ -43,5 +43,14 @@ namespace BLL
             if (_grupoUsuario.NomeGrupo.Length <= 2)
                 throw new Exception("O nome deve ter mais de 2 caracteres.");
         }
+        public void AdicionarPermissao(int _idPermissao, int _idGrupoUsuario)
+        {
+            if (!new GrupoUsuarioDAL().PermissaoPertenceAoGrupo(_idPermissao, _idGrupoUsuario))
+                new GrupoUsuarioDAL().AdicionarPermissao(_idPermissao, _idGrupoUsuario);
+        }
+        public void RemoverPermissao(int _idPermissao, int _idGrupoUsuario)
+        {
+            new GrupoUsuarioDAL().RemoverPermissao(_idPermissao, _idGrupoUsuario);
+        }
     }
 }
