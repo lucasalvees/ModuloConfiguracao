@@ -44,7 +44,7 @@
             this.senhaTextBox = new System.Windows.Forms.TextBox();
             this.ativoCheckBox = new System.Windows.Forms.CheckBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxConfirmarSenha = new System.Windows.Forms.TextBox();
             this.buttonSalvar = new System.Windows.Forms.Button();
             this.buttonCancelar = new System.Windows.Forms.Button();
             nomeLabel = new System.Windows.Forms.Label();
@@ -96,7 +96,7 @@
             // senhaLabel
             // 
             senhaLabel.AutoSize = true;
-            senhaLabel.Location = new System.Drawing.Point(351, 100);
+            senhaLabel.Location = new System.Drawing.Point(394, 106);
             senhaLabel.Name = "senhaLabel";
             senhaLabel.Size = new System.Drawing.Size(46, 16);
             senhaLabel.TabIndex = 9;
@@ -105,7 +105,7 @@
             // ativoLabel
             // 
             ativoLabel.AutoSize = true;
-            ativoLabel.Location = new System.Drawing.Point(351, 182);
+            ativoLabel.Location = new System.Drawing.Point(408, 186);
             ativoLabel.Name = "ativoLabel";
             ativoLabel.Size = new System.Drawing.Size(37, 16);
             ativoLabel.TabIndex = 11;
@@ -114,7 +114,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new System.Drawing.Point(351, 139);
+            label2.Location = new System.Drawing.Point(338, 142);
             label2.Name = "label2";
             label2.Size = new System.Drawing.Size(104, 16);
             label2.TabIndex = 9;
@@ -163,7 +163,7 @@
             // senhaTextBox
             // 
             this.senhaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usuarioBindingSource, "Senha", true));
-            this.senhaTextBox.Location = new System.Drawing.Point(403, 100);
+            this.senhaTextBox.Location = new System.Drawing.Point(454, 103);
             this.senhaTextBox.Multiline = true;
             this.senhaTextBox.Name = "senhaTextBox";
             this.senhaTextBox.Size = new System.Drawing.Size(225, 25);
@@ -172,7 +172,7 @@
             // ativoCheckBox
             // 
             this.ativoCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.usuarioBindingSource, "Ativo", true));
-            this.ativoCheckBox.Location = new System.Drawing.Point(397, 179);
+            this.ativoCheckBox.Location = new System.Drawing.Point(454, 183);
             this.ativoCheckBox.Name = "ativoCheckBox";
             this.ativoCheckBox.Size = new System.Drawing.Size(104, 24);
             this.ativoCheckBox.TabIndex = 7;
@@ -192,13 +192,13 @@
             this.label1.Text = "Cadastro de usuários";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // textBox1
+            // textBoxConfirmarSenha
             // 
-            this.textBox1.Location = new System.Drawing.Point(461, 136);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(225, 25);
-            this.textBox1.TabIndex = 6;
+            this.textBoxConfirmarSenha.Location = new System.Drawing.Point(454, 139);
+            this.textBoxConfirmarSenha.Multiline = true;
+            this.textBoxConfirmarSenha.Name = "textBoxConfirmarSenha";
+            this.textBoxConfirmarSenha.Size = new System.Drawing.Size(225, 25);
+            this.textBoxConfirmarSenha.TabIndex = 6;
             // 
             // buttonSalvar
             // 
@@ -231,7 +231,7 @@
             this.Controls.Add(ativoLabel);
             this.Controls.Add(this.ativoCheckBox);
             this.Controls.Add(label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxConfirmarSenha);
             this.Controls.Add(senhaLabel);
             this.Controls.Add(this.senhaTextBox);
             this.Controls.Add(emailLabel);
@@ -268,7 +268,7 @@
         private System.Windows.Forms.TextBox senhaTextBox;
         private System.Windows.Forms.CheckBox ativoCheckBox;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxConfirmarSenha;
         private System.Windows.Forms.Button buttonSalvar;
         private System.Windows.Forms.Button buttonCancelar;
     }

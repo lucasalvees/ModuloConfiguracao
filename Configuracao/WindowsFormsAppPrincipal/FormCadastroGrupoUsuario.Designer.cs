@@ -32,9 +32,9 @@
             System.Windows.Forms.Label nomeGrupoLabel;
             this.grupoUsuarioBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.nomeGrupoTextBox = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.buttonSalvar = new System.Windows.Forms.Button();
             this.buttonCancelar = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             nomeGrupoLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.grupoUsuarioBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -42,9 +42,10 @@
             // nomeGrupoLabel
             // 
             nomeGrupoLabel.AutoSize = true;
-            nomeGrupoLabel.Location = new System.Drawing.Point(22, 99);
+            nomeGrupoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            nomeGrupoLabel.Location = new System.Drawing.Point(12, 108);
             nomeGrupoLabel.Name = "nomeGrupoLabel";
-            nomeGrupoLabel.Size = new System.Drawing.Size(101, 16);
+            nomeGrupoLabel.Size = new System.Drawing.Size(123, 20);
             nomeGrupoLabel.TabIndex = 2;
             nomeGrupoLabel.Text = "Nome do grupo";
             // 
@@ -55,47 +56,49 @@
             // nomeGrupoTextBox
             // 
             this.nomeGrupoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.grupoUsuarioBindingSource, "NomeGrupo", true));
-            this.nomeGrupoTextBox.Location = new System.Drawing.Point(129, 96);
+            this.nomeGrupoTextBox.Location = new System.Drawing.Point(149, 98);
             this.nomeGrupoTextBox.Multiline = true;
             this.nomeGrupoTextBox.Name = "nomeGrupoTextBox";
-            this.nomeGrupoTextBox.Size = new System.Drawing.Size(615, 25);
+            this.nomeGrupoTextBox.Size = new System.Drawing.Size(615, 30);
             this.nomeGrupoTextBox.TabIndex = 3;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(213, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(370, 46);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Cadastro de grupos";
             // 
             // buttonSalvar
             // 
-            this.buttonSalvar.Location = new System.Drawing.Point(530, 366);
+            this.buttonSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSalvar.Location = new System.Drawing.Point(596, 184);
             this.buttonSalvar.Name = "buttonSalvar";
-            this.buttonSalvar.Size = new System.Drawing.Size(75, 23);
-            this.buttonSalvar.TabIndex = 14;
+            this.buttonSalvar.Size = new System.Drawing.Size(75, 30);
+            this.buttonSalvar.TabIndex = 16;
             this.buttonSalvar.Text = "Salvar";
             this.buttonSalvar.UseVisualStyleBackColor = true;
             this.buttonSalvar.Click += new System.EventHandler(this.buttonSalvar_Click);
             // 
             // buttonCancelar
             // 
-            this.buttonCancelar.Location = new System.Drawing.Point(611, 366);
+            this.buttonCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCancelar.Location = new System.Drawing.Point(689, 184);
             this.buttonCancelar.Name = "buttonCancelar";
-            this.buttonCancelar.Size = new System.Drawing.Size(75, 23);
-            this.buttonCancelar.TabIndex = 14;
+            this.buttonCancelar.Size = new System.Drawing.Size(75, 30);
+            this.buttonCancelar.TabIndex = 0;
             this.buttonCancelar.Text = "Cancelar";
             this.buttonCancelar.UseVisualStyleBackColor = true;
             this.buttonCancelar.Click += new System.EventHandler(this.buttonCancelar_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(17, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(370, 46);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Cadastro de grupos";
             // 
             // FormCadastroGrupoUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 168);
+            this.ClientSize = new System.Drawing.Size(800, 226);
             this.Controls.Add(this.buttonCancelar);
             this.Controls.Add(this.buttonSalvar);
             this.Controls.Add(this.label1);
